@@ -1,5 +1,7 @@
 import React from "react";
-
+import Destinations from "./Destination";
+import Crew from "./Crew";
+import Technology from "./Technology"
 const Home = () => {
   return (
     <main className="home">
@@ -16,6 +18,9 @@ const Home = () => {
       <a href="/destination" className="hero-btn">
         EXPLORE
       </a>
+      <Destinations />
+      <Crew/>
+      <Technology/>
     </main>
   );
 };
