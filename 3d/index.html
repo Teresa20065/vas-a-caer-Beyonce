@@ -5,29 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asteroid 3D Model with Music</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>Asteroid</h1>
-  <model-viewer src="img\roca_del_espacio__1006161259.glb" alt="Asteroid Model" camera-controls background-color="#EFEFEF" class="model-viewer"></model-viewer>
-
-  <button id="toggle-music">Play/Pause Music</button>
-  <audio id="background-music" src="music\Estrellas Brillantes.mp3"></audio>
+  <header>
+    <h1>Asteroid 3D Experience</h1>
+  </header>
+  <main>
+    <section class="model-section">
+      <model-viewer src="img/Galactic_Glow_1006162707.glb" alt="Asteroid Model" camera-controls background-color="#EFEFEF" class="model-viewer"></model-viewer>
+    </section>
+    
+    <section class="controls">
+      <button id="toggle-music" class="music-btn">
+        <span class="play-icon">&#9654;</span>
+        <span class="pause-icon" hidden>&#10074;&#10074;</span>
+        Play Music
+      </button>
+      <audio id="background-music" src="music/Brown Dwarfs Delight (1).mp3"></audio>
+    </section>
+  </main>
 
   <script>
     const toggleButton = document.getElementById('toggle-music');
     const audio = document.getElementById('background-music');
+    const playIcon = document.querySelector('.play-icon');
+    const pauseIcon = document.querySelector('.pause-icon');
 
     toggleButton.addEventListener('click', () => {
       if (audio.paused) {
         audio.play();
+        playIcon.hidden = true;
+        pauseIcon.hidden = false;
+        toggleButton.textContent = 'Pause Music';
       } else {
         audio.pause();
+        playIcon.hidden = false;
+        pauseIcon.hidden = true;
+        toggleButton.textContent = 'Play Music';
       }
-    });
-
-    toggleButton.addEventListener('dblclick', () => {
-      audio.pause();
     });
 
     const modelViewer = document.querySelector('model-viewer');
@@ -37,5 +53,3 @@
   </script>
 </body>
 </html>
-
-
