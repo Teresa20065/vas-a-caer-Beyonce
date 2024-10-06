@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asteroid 3D Model with Music</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Asteroid</h1>
+  <model-viewer src="img\roca_del_espacio__1006161259.glb" alt="Asteroid Model" camera-controls background-color="#EFEFEF" class="model-viewer"></model-viewer>
+
+  <button id="toggle-music">Play/Pause Music</button>
+  <audio id="background-music" src="music\Estrellas Brillantes.mp3"></audio>
+
+  <script>
+    const toggleButton = document.getElementById('toggle-music');
+    const audio = document.getElementById('background-music');
+
+    toggleButton.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
+
+    toggleButton.addEventListener('dblclick', () => {
+      audio.pause();
+    });
+
+    const modelViewer = document.querySelector('model-viewer');
+    modelViewer.addEventListener('model-loaded', () => {
+      console.log('Asteroid model loaded successfully');
+    });
+  </script>
+</body>
+</html>
+
+

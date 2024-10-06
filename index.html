@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowing - Reveal The Beauty of Skin</title>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top" >
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+      <div>
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="/shopping-website-javascript/estrellas.html" class="navbar-link has-after">Stars</a>
+            </li>
+            <li>
+              <a href="/shopping-website-javascript/galaxia.html" class="navbar-link has-after">Galaxys</a>
+            </li>
+            <li>
+              <a href="/shopping-website-javascript/exoplanetas.html" class="navbar-link has-after">Exoplanets</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="Glowing">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+       
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="/shopping-website-javascript/estrellas.html" class="navbar-link" data-nav-link>Stars</a>
+        </li>
+        <li>
+          <a href="/shopping-website-javascript/galaxia.html" class="navbar-link" data-nav-link>Galaxys</a>
+        </li>
+        <li>
+          <a href="/shopping-website-javascript/exoplanetas.html" class="navbar-link" data-nav-link>Exoplanets</a>
+        </li>
+
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.gif')">
+
+                <!-- <model-viewer src="img\roca_del_espacio__1006161259.glb" alt="Asteroid Model" camera-controls background-color="#EFEFEF" class="model-viewer"></model-viewer> -->
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    The Universe’s <br>
+                    Most Powerful Eye
+                  </h1>
+
+                  <p class="hero-text">
+                    The James Webb Telescope takes us farther than ever before, exploring the universe's depths and unveiling the hidden mysteries of the earliest galaxies.
+                  </p>
+
+                  <br/>
+
+                  <a href="#" class="btn btn-primary">Discover more</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.png')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Discovering <br>
+                     New Space Frontiers
+                  </h1>
+
+                  <p class="hero-text">
+                    With unprecedented technology, the James Webb is revolutionizing astronomy, detecting distant planets, stars, and systems like never before.
+                  </p>
+
+                  <br/>
+
+                  <a href="#" class="btn btn-primary">Discover more</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-2.png')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    The Future <br>
+                     of Space Exploration
+                  </h1>
+
+                  <p class="hero-text">
+                    The James Webb not only observes the universe's past but also paves the way for future missions and discoveries that will transform our understanding of the cosmos.
+                  </p>
+
+                  <br/>
+
+                  <a href="#" class="btn btn-primary">Discover more</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title text">Stars</h2>
+
+                <p class="card-text"></p>
+
+                <a href="/shopping-website-javascript/estrellas.html" class="btn-link">
+                  <span class="span">Discover more</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.jpeg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Exoplanets</h2>
+
+                <p class="card-text"></p>
+
+                <a href="/shopping-website-javascript/exoplanetas.html" class="btn-link">
+                  <span class="span">Discover more</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image"  style="background-image: url('./assets/images/collection-2.jpeg')"></div>
+
+              </div>
+            </li>
+
+            <li >
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Galaxys</h2>
+
+                <p class="card-text"></p>
+
+                <a href="/shopping-website-javascript/galaxia.html" class="btn-link">
+                  <span class="span">Discover more</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-3.jpeg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SHOP
+      -->
+
+
+    
+
+
+
+
+
+      <!-- 
+        - #BANNER
+      -->
+
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+
+                <p class="card-subtitle">Hackaton Nasa Space Apps</p>
+
+                <h2 class="h3 card-title">
+                  Symphony of the Stars: Harmonizing the James Webb Space Telescope in Music and Images</h2>
+
+                <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/symphony-of-the-stars-harmonizing-the-james-webb-space-telescope-in-music-and-images/" class="btn btn-secondary">Discover more</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/nasaBanner.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+
+                <h2 class="h2 card-title">Group: Vas a caer Beyonce</h2>
+
+                <p class="card-text">
+                  Meet the members of our group:
+                </p>
+
+                <a href="https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/vas-a-caer-beyonce/" class="btn btn-secondary">About Us</a>
+
+                <div class="has-bg-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2813_of_118%29_%2852945303842%29_%28face_cropped%29.jpg/800px-Beyonc%C3%A9_-_Tottenham_Hotspur_Stadium_-_1st_June_2023_%2813_of_118%29_%2852945303842%29_%28face_cropped%29.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
