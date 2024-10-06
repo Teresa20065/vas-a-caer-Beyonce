@@ -31,7 +31,7 @@ const Destinations = () => {
   };
 
   return (
-    <main className="page">
+    <main className="home">
       <h5 className="page-heading heading-5">
         <span>01</span>&nbsp;&nbsp;PICK YOUR DESTINATION
       </h5>
