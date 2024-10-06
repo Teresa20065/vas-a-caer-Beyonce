@@ -2,91 +2,13 @@
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  background-color: black;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
-  &-home {
-    background-image: url("../../public/assets/home/background-home-desktop.jpg");
-
-    @media only screen and (max-width: $width-tab) {
-      background-image: url("../../public/assets/home/background-home-tablet.jpg");
-    }
-    @media only screen and (max-width: $width-mob) {
-      background-image: url("../../public/assets/home/background-home-mobile.jpg");
-    }
-  }
-
-  &-destination {
-    background-image: linear-gradient(
-        rgba(11, 13, 23, 0.35),
-        rgba(11, 13, 23, 0.35)
-      ),
-      url("../../public/assets/destination/background-destination-desktop.jpg");
-
-    @media only screen and (max-width: $width-tab) {
-      background-image: linear-gradient(
-          rgba(11, 13, 23, 0.35),
-          rgba(11, 13, 23, 0.35)
-        ),
-        url("../../public/assets/destination/background-destination-tablet.jpg");
-    }
-    @media only screen and (max-width: $width-mob) {
-      background-image: linear-gradient(
-          rgba(11, 13, 23, 0.35),
-          rgba(11, 13, 23, 0.35)
-        ),
-        url("../../public/assets/destination/background-destination-mobile.jpg");
-    }
-  }
-
-  &-crew {
-    background-image: linear-gradient(
-        rgba(11, 13, 23, 0.35),
-        rgba(11, 13, 23, 0.35)
-      ),
-      url("../../public/assets/crew/background-crew-desktop.jpg");
-
-    @media only screen and (max-width: $width-tab) {
-      background-image: linear-gradient(
-          rgba(11, 13, 23, 0.35),
-          rgba(11, 13, 23, 0.35)
-        ),
-        url("../../public/assets/crew/background-crew-tablet.jpg");
-    }
-    @media only screen and (max-width: $width-mob) {
-      background-image: linear-gradient(
-          rgba(11, 13, 23, 0.35),
-          rgba(11, 13, 23, 0.35)
-        ),
-        url("../../public/assets/crew/background-crew-mobile.jpg");
-    }
-  }
-
-  &-technology {
-    background-image: linear-gradient(
-        rgba(11, 13, 23, 0.35),
-        rgba(11, 13, 23, 0.35)
-      ),
-      url("../../public/assets/technology/background-technology-desktop.jpg");
-
-    @media only screen and (max-width: $width-tab) {
-      background-image: linear-gradient(
-          rgba(11, 13, 23, 0.35),
-          rgba(11, 13, 23, 0.35)
-        ),
-        url("../../public/assets/technology/background-technology-tablet.jpg");
-    }
-    @media only screen and (max-width: $width-mob) {
-      background-image: linear-gradient(
-          rgba(11, 13, 23, 0.35),
-          rgba(11, 13, 23, 0.35)
-        ),
-        url("../../public/assets/technology/background-technology-mobile.jpg");
-    }
-  }
 }
 
 .home {
